@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/harvenz/probejs/issues"
   },
-  "homepage": "https://github.com/harvenz/probejs#readme"
+  "homepage": "https://github.com/harvenz/probejs#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0"
+  }
 }
