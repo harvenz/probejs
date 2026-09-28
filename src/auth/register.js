@@ -1,4 +1,5 @@
 import { hash } from "./password.js";
+import { create } from "./identity.js";
 
 export async function register({ email, password }) {
   if (!email || !password) {
@@ -7,8 +8,8 @@ export async function register({ email, password }) {
 
   const passwordHash = await hash(password);
 
-  return {
+  return create({
     email,
     passwordHash,
-  };
+  });
 }
