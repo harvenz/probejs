@@ -9,7 +9,7 @@ export async function register({ email, password }) {
   const passwordHash = await hash(password);
 
   return create({
-    email,
+    email: email.trim().toLowerCase(),
     passwordHash,
   });
 }
